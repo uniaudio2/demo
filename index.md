@@ -65,7 +65,6 @@ Text-to-sound generation: given a text description (caption), the model generate
 
 | <center> Description </center> | <center> Ours </center> |
 | ----------------------- | ----------- |
-| A man speaks as birds chirp and a vehicle passes nearby | <audio class="audio-player2" src="sound/siJFXfGWgDk.wav" controls preload></audio> |
 | A man speaks as a vehicle engine idles | <audio class="audio-player2" src="sound/shmR4OZtzqA.wav" controls preload></audio> |
 | A large crowd cheers and applauds | <audio class="audio-player2" src="sound/rqfQRErjfk8.wav" controls preload></audio> |
 | A race car approaches quickly and slows down squealing tires | <audio class="audio-player2" src="sound/sEprKHm8Sj8.wav" controls preload></audio> |
@@ -76,9 +75,10 @@ Text-to-music generation: given a text description (caption), the model generate
 
 | <center> Description </center> | <center> Ours </center> |
 | ----------------------- | ----------- |
-| A male vocalist sings this energetic Punjabi folk song. The tempo is medium fast with an infectious tabla and Dhol percussive beat, ektara rhythm and a funky keyboard accompaniment. The song is lively, spirited, cheerful, simple, happy, playful, enthusiastic, vivacious with a festive, celebratory vibe and dance groove. This song is a Festive Punjabi Folk song. | <audio class="audio-player2" src="music/_2wFjBoreaY.wav" controls preload></audio> |
-| A male singer sings Arabic vocals with backup singers in vocal harmony. The song is medium tempo with a steady drumming rhythm, percussive bass line, keyboard accompaniment and percussive hits. The song is an Arabic dance song. | <audio class="audio-player2" src="music/_8OIugVSFeE.wav" controls preload></audio> |
-| This is a classical music waltz piece played on a glass harp instrument. The melody is being played on the smaller glasses at a higher pitch while the rhythm is being played on the bigger glass at a medium pitch. The piece is being played at a cathedral which gives a nice resonance and natural reverb effect. The piece has a unique character. It can be played in the soundtracks of children's movies/TV shows. | <audio class="audio-player2" src="music/_b-7P-XsnUI.wav" controls preload></audio> |
+| A male vocalist sings this energetic Punjabi folk song. The tempo is medium fast with an infectious tabla and Dhol percussive beat, ektara rhythm and a funky keyboard accompaniment. The song is lively, spirited, cheerful, simple, happy, playful, enthusiastic, vivacious with a festive, celebratory vibe and dance groove. This song is a Festive Punjabi Folk song. | <audio class="audio-player2" src="music/2wFjBoreaY.wav" controls preload></audio> |
+| A male singer sings Arabic vocals with backup singers in vocal harmony. The song is medium tempo with a steady drumming rhythm, percussive bass line, keyboard accompaniment and percussive hits. The song is an Arabic dance song. | <audio class="audio-player2" src="music/8OIugVSFeE.wav" controls preload></audio> |
+| This is a classical music waltz piece played on a glass harp instrument. The melody is being played on the smaller glasses at a higher pitch while the rhythm is being played on the bigger glass at a medium pitch. The piece is being played at a cathedral which gives a nice resonance and natural reverb effect. The piece has a unique character. It can be played in the soundtracks of children's movies/TV shows. | <audio class="audio-player2" src="music/b-7P-XsnUI.wav" controls preload></audio> |
+
 
 ## Song Generation Demo
 
@@ -99,7 +99,7 @@ Song generation: given lyrics (text), the model generates the corresponding sing
 | <center> Lyrics </center> | <center> Ours </center> |
 | ----------------------- | ----------- |
 | 爱与不爱, 是最痛苦的徘徊, 表面不爱, 但心里仍期待, Hello, 我想你 | <audio class="audio-player2" src="song/ZH/91_357_segment_1.wav" controls preload></audio> |
-| 也不要再伤害, 存不存在, 不再是重要的等待, 扫掉阴霾, 该为自己安排, 欺负你的人, 让他去无赖. | <audio class="audio-player2" src="song/ZH/91_357_segment_2.wav" controls preload></audio> |
+| 我的眼光闪烁闪烁好空洞, 我的心跳扑通扑通地阵阵悸动. | <audio class="audio-player2" src="song/ZH/91_358_segment_6.wav" controls preload></audio> |
 
 ## Speech_Sound generation Demo
 
@@ -114,7 +114,7 @@ Speech-with-sound generation: given speech content (text) and a sound tag, the m
 
 ## Audio-Instructed TTS Demo
 
-Given an **audio prompt** (voice timbre), a **caption** (style description), and **speech content** (text), the model generates speech that follows the prompt voice and style. Prompt audios are copied to the `prompt` folder under each language. The test data of Chinese TTS come from https://github.com/thuhcsi/SECap
+Given an **audio prompt** (voice timbre), a **caption** (style description), and **speech content** (text), the model generates speech that follows the prompt voice and style. The test data of Chinese TTS come from https://github.com/thuhcsi/SECap
 
 ### Audio-Instructed TTS (English)
 
@@ -122,9 +122,7 @@ Given an **audio prompt** (voice timbre), a **caption** (style description), and
 | ----------------------- | ----------- | ------ | ------ |
 | In early december twenty sixteen dmitriev again broached the topic of meeting incoming administration officials with nader in january or february. | With a moderate pace, a middle-aged woman's voice carries an air of genuine enthusiasm. Her tone is strikingly expressive and animated. | <audio class="audio-player2" src="audio_instruct_tts/EN/prompt/2221_13983_000000.flac" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/EN/2221_13983_000000.wav" controls preload></audio> |
 | Dozens of i r a employees were responsible for operating accounts and personas on different u s social media platforms. | A middle-aged female delivers her speech in a monotone fashion, maintaining a moderate pitch that echoes a sense of calm determination. | <audio class="audio-player2" src="audio_instruct_tts/EN/prompt/2221_13983_000002.flac" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/EN/2221_13983_000002.wav" controls preload></audio> |
-| On november sixteen twenty sixteen, catherine vargas, an executive assistant to kushner, received a request for a meeting with russian ambassador sergey kislyak. | A middle-aged woman, her voice rich with emotion and animated expressions, delivers her speech at a moderate pace. | <audio class="audio-player2" src="audio_instruct_tts/EN/prompt/2221_13983_000004.flac" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/EN/2221_13983_000004.wav" controls preload></audio> |
-| Three. Ambassador kislyaks meeting with jared kushner and michael flynn in trump tower following the election. | A middle-aged female delivers her speech with a remarkable degree of expressiveness and animation. Her words flow out in a slightly slow pace. | <audio class="audio-player2" src="audio_instruct_tts/EN/prompt/2221_13983_000005.flac" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/EN/2221_13983_000005.wav" controls preload></audio> |
-| The security council, which includes russia, was scheduled to vote on the resolution the following day. | In the midst of her speech, a middle-aged woman moderates her tone, exhibiting a slight yet animated expression. | <audio class="audio-player2" src="audio_instruct_tts/EN/prompt/2221_13983_000006.flac" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/EN/2221_13983_000006.wav" controls preload></audio> |
+
 
 ### Audio-Instructed TTS (Chinese)
 
@@ -133,7 +131,6 @@ Given an **audio prompt** (voice timbre), a **caption** (style description), and
 | 人生就像剥洋葱,总有一片会让你流泪。 | 伤心难过，声音颤抖，情绪激动失望 | <audio class="audio-player2" src="audio_instruct_tts/ZH/prompt/tx_emotion_00201000107.wav" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/ZH/tx_emotion_00201000107.wav" controls preload></audio> |
 | 心痛?要怪就怪自己,有本事爱上别人,没本事让别人爱上自己。 | 伤心难过，又无能为力 | <audio class="audio-player2" src="audio_instruct_tts/ZH/prompt/tx_emotion_00201000148.wav" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/ZH/tx_emotion_00201000148.wav" controls preload></audio> |
 | 抱歉让你认识一个这么差劲的我。 | 内心对他人感到抱歉，责怪自己 | <audio class="audio-player2" src="audio_instruct_tts/ZH/prompt/tx_emotion_00201000209.wav" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/ZH/tx_emotion_00201000209.wav" controls preload></audio> |
-| 那种感觉,好像自己的心被人千刀万剐那样般的难受。 | 悲痛到无法自拔 | <audio class="audio-player2" src="audio_instruct_tts/ZH/prompt/tx_emotion_00201000220.wav" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/ZH/tx_emotion_00201000220.wav" controls preload></audio> |
 | 他如果真的爱你,你就不会这么难过了。 | 伤心不已，悲伤凄凉 | <audio class="audio-player2" src="audio_instruct_tts/ZH/prompt/tx_emotion_00201000274.wav" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/ZH/tx_emotion_00201000274.wav" controls preload></audio> |
 
 ## Dysarthric Speech Recognition (DSR) Demo
@@ -155,15 +152,13 @@ InstructTTS: given an **instruction** (style/caption) and **content** (text), th
 | <center> Instruction (Style) </center> | <center> Content (Text) </center> | <center> Mimo-audio </center> | <center> Ours </center> |
 | ----------------------- | ----------- | ------ | ------ |
 | With a moderate pace, a middle-aged woman's voice carries an air of genuine enthusiasm. Her tone is strikingly expressive and animated. | In early december twenty sixteen dmitriev again broached the topic of meeting incoming administration officials with nader in january or february. | <audio class="audio-player2" src="InsturctTTS/EN/mimo/2221_13983_000000.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/EN/ours/2221_13983_000000.wav" controls preload></audio> |
-| A middle-aged female delivers her speech in a monotone fashion, maintaining a moderate pitch that echoes a sense of calm determination. | Dozens of i r a employees were responsible for operating accounts and personas on different u s social media platforms. | <audio class="audio-player2" src="InsturctTTS/EN/mimo/2221_13983_000002.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/EN/ours/2221_13983_000002.wav" controls preload></audio> |
-| A middle-aged woman, her voice rich with emotion and animated expressions, delivers her speech at a moderate pace. | On november sixteen twenty sixteen, catherine vargas, an executive assistant to kushner, received a request for a meeting with russian ambassador sergey kislyak. | <audio class="audio-player2" src="InsturctTTS/EN/mimo/2221_13983_000004.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/EN/ours/2221_13983_000004.wav" controls preload></audio> |
+| A middle-aged man, his voice rich with emotion and animated expressions. | On november sixteen twenty sixteen, catherine vargas, an executive assistant to kushner, received a request for a meeting with russian ambassador sergey kislyak. | <audio class="audio-player2" src="InsturctTTS/EN/mimo/2221_13983_000004.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/EN/ours/2221_13983_000004.wav" controls preload></audio> |
 
 ### InstructTTS (Chinese)
 
 | <center> Instruction (Style) </center> | <center> Content (Text) </center> | <center> Mimo-audio </center> | <center> Ours </center> |
 | ----------------------- | ----------- | ------ | ------ |
 | 悲伤逆流成河 | 一年又一年,一日复一日,一聚一离别,一生一场梦。 | <audio class="audio-player2" src="InsturctTTS/ZH/mimo/tx_emotion_00201000015.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/ZH/ours/tx_emotion_00201000015.wav" controls preload></audio> |
-| 伤心难过，声音颤抖，情绪激动失望 | 人生就像剥洋葱,总有一片会让你流泪。 | <audio class="audio-player2" src="InsturctTTS/ZH/mimo/tx_emotion_00201000107.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/ZH/ours/tx_emotion_00201000107.wav" controls preload></audio> |
 | 伤心难过，又无能为力 | 心痛?要怪就怪自己,有本事爱上别人,没本事让别人爱上自己。 | <audio class="audio-player2" src="InsturctTTS/ZH/mimo/tx_emotion_00201000148.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/ZH/ours/tx_emotion_00201000148.wav" controls preload></audio> |
 | 内心对他人感到抱歉，责怪自己 | 抱歉让你认识一个这么差劲的我。 | <audio class="audio-player2" src="InsturctTTS/ZH/mimo/tx_emotion_00201000209.wav" controls preload></audio> | <audio class="audio-player2" src="InsturctTTS/ZH/ours/tx_emotion_00201000209.wav" controls preload></audio> |
 
@@ -182,8 +177,8 @@ Speech-to-text Q&A: the user asks a question in speech; the model responds in te
 
 | <center> Sample </center> | <center> Question (Speech) </center> | <center> Ours </center> |
 | ----------------------- | ----------- | ------ |
-| 1 | <audio class="audio-player2" src="s2t/question/helpful_base_0.wav" controls preload></audio> | The US states got their names from Native American languages, with some names being derived from local tribes or geographical features. |
-| 2 | <audio class="audio-player2" src="s2t/question/helpful_base_1.wav" controls preload></audio> | Famous actors like Meryl Streep and Julia Roberts began their careers on Broadway, with Streep winning an Oscar for her performance in The Royal Family. |
+| 1 | <audio class="audio-player2" src="s2t/question/helpful_base_0.wav" controls preload></audio> | Famous actors like Meryl Streep and Julia Roberts began their careers on Broadway, with Streep winning an Oscar for her performance in The Royal Family. |
+| 2 | <audio class="audio-player2" src="s2t/question/helpful_base_1.wav" controls preload></audio> | The US states got their names from Native American languages, with some names being derived from local tribes or geographical features. |
 
 ## One-Shot Speech Denoising Demo
 
