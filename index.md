@@ -216,3 +216,24 @@ Few-shot (2-way) sound classification: given two support pairs (source1_audio â†
 | 4 | For each of the following input output pairs, output is one of audio scene: [mouse_click or cow] | <audio class="audio-player2" src="few_shot_sound/demo/source1/00427.wav" controls preload></audio> | mouse_click | <audio class="audio-player2" src="few_shot_sound/demo/source2/00427.wav" controls preload></audio> | cow | <audio class="audio-player2" src="few_shot_sound/query_audio/00427.wav" controls preload></audio> | mouse_click | cow | cow |
 | 5 | For each of the following input output pairs, output is one of audio scene: [clapping or thunderstorm] | <audio class="audio-player2" src="few_shot_sound/demo/source1/00162.wav" controls preload></audio> | thunderstorm | <audio class="audio-player2" src="few_shot_sound/demo/source2/00162.wav" controls preload></audio> | clapping | <audio class="audio-player2" src="few_shot_sound/query_audio/00162.wav" controls preload></audio> | thunderstorm | thunderstorm | thunderstorm |
 
+## Conclusion
+
+In this study, we investigate how to build a unified audio foundation model that supports both understanding and generation. We propose ReasoningCodec, which factorizes audio into reasoning tokens and reconstruction tokens, and train UniAudio 2.0 with a unified autoregressive architecture and a multi-stage, multi-task training strategy. Experiments show strong performance on seen speech, sound, and music tasks, as well as encouraging few-shot and zero-shot generalization to unseen tasks. Extensive ablation studies suggest that scaling data/task diversity and model size is key to improving generalization on unseen tasks. In the future, we plan to scale both the model and the training data to further improve generalization. 
+
+## Limitations
+
+In this study, we focus on building a multi-task audio foundation model that supports diverse audio understanding and generation tasks. It can also generalize to many unseen tasks in few-shot or zero-shot settings. However, several limitations remain.
+
+(1) To improve reconstruction quality for sound and music, we adopt a flow-based decoder to recover waveforms from semantic tokens. The multi-step decoding procedure in flow matching increases inference latency for generation. In the future, it is necessary to explore few-step decoding (e.g., two steps) to better balance quality and generation speed.
+
+(2) Although UniAudio 2.0 demonstrates the ability to handle unseen tasks, there is still room for improvement. In addition, it has not yet been shown to solve arbitrary audio-related tasks. We acknowledge that the set of supported unseen tasks is closely related to the training data. For example, the model currently cannot handle speech diarization, likely because we do not include diarization- or duration-related supervision during training.  
+
+(3) Due to limited GPU resources, we have not fully explored scaling behaviors (i.e., scaling laws) of UniAudio 2.0. We only conduct experiments on 1B- and 3B-parameter variants. In the future, scaling to 7B and larger models is a promising direction.
+
+(4) Due to the relatively limited amount of sound and music data compared to speech data, UniAudio~2.0 currently performs better on speech-related tasks. In future work, expanding and improving sound and music datasets is expected to further enhance performance in these domains.
+
+(5) This work primarily focuses on pre-training design choices, such as the audio tokenizer and the unified LLM architecture. As a result, we do not extensively investigate post-training strategies (e.g., multi-task SFT and reinforcement learning). We plan to incorporate more post-training techniques to further improve UniAudio 2.0.
+
+(6) We acknowledge that the set of compared models is not exhaustive. This is partly because many related models are not publicly available, and partly because our framework supports a broad spectrum of tasks, which makes comprehensive comparisons challenging. We respect and appreciate all prior work in this area, even if some are not explicitly discussed due to space limitations. We also do not claim that UniAudio~2.0 universally outperforms all existing approaches; instead, different model architectures, different special task design (e.g. special models for TTS, ASR, diffusion-based unified models) also offer complementary strengths. 
+
+
