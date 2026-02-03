@@ -150,6 +150,17 @@ Given an **audio prompt** (voice timbre), a **caption** (style description), and
 | 抱歉让你认识一个这么差劲的我。 | 内心对他人感到抱歉，责怪自己 | <audio class="audio-player2" src="audio_instruct_tts/ZH/prompt/tx_emotion_00201000209.wav" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/ZH/tx_emotion_00201000209.wav" controls preload></audio> |
 | 他如果真的爱你,你就不会这么难过了。 | 伤心不已，悲伤凄凉 | <audio class="audio-player2" src="audio_instruct_tts/ZH/prompt/tx_emotion_00201000274.wav" controls preload></audio> | <audio class="audio-player2" src="audio_instruct_tts/ZH/tx_emotion_00201000274.wav" controls preload></audio> |
 
+## Speech edit 
+
+Speech edit: the user asks give a speech and a prompt to modify the speech; the model responds in speech. 
+
+| <center> Sample ID </center> | <center> input speech </center> | <center> prompt </center> |<center> Ours </center> |
+| ----------------------- | ----------- | ------ | ------ |
+| 1 | <audio class="audio-player2" src="speech_edit/input/speech_edit_4_1580_141084_000076_000006.wav" controls preload></audio> | edit the speech with whisper style | <audio class="audio-player2" src="speech_edit/ours/speech_edit_4_1580_141084_000076_000006.wav" controls preload></audio> |
+| 2 | <audio class="audio-player2" src="speech_edit/input/AriaNeural_whispering_to_shouting.wav" controls preload></audio> | edit the speech with shouting style | <audio class="audio-player2" src="speech_edit/ours/AriaNeural_whispering_to_shouting.wav" controls preload></audio> |
+| 3 | <audio class="audio-player2" src="speech_edit/input/speech_edit_task_000836_speed_slow.wav" controls preload></audio> | make the speech speaking slow | <audio class="audio-player2" src="speech_edit/ours/speech_edit_task_000836_speed_slow.wav" controls preload></audio> |
+| 4 | <audio class="audio-player2" src="speech_edit/input/speech_edit_task_010405_speed_fast.wav" controls preload></audio> | make the speech speaking fast | <audio class="audio-player2" src="speech_edit/ours/speech_edit_task_010405_speed_fast.wav" controls preload></audio> |
+
 ## Dysarthric Speech Recognition (zero-shot)
 
 Dysarthric speech recognition: given dysarthric (impaired) speech audio, the model recognizes the spoken content. Below are samples with ground truth transcription and our model's recognition result (Ours).
@@ -181,6 +192,7 @@ Speech-to-text Q&A: the user asks a question in speech; the model responds in te
 | ----------------------- | ----------- | ------ |
 | 1 | <audio class="audio-player2" src="s2t/question/helpful_base_0.wav" controls preload></audio> | Famous actors like Meryl Streep and Julia Roberts began their careers on Broadway, with Streep winning an Oscar for her performance in The Royal Family. |
 | 2 | <audio class="audio-player2" src="s2t/question/helpful_base_1.wav" controls preload></audio> | The US states got their names from Native American languages, with some names being derived from local tribes or geographical features. |
+
 
 ## One-Shot Speech Denoising (few-shot)
 
