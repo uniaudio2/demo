@@ -63,7 +63,6 @@ In the following, we give the demo for each tasks.
 | 人来人往 | <audio class="audio-player2" src="TTS/Yue/qwen/common_voice_yue_31190824-common_voice_yue_31190840.wav" controls preload></audio> | <audio class="audio-player2" src="TTS/Yue/ours/common_voice_yue_31190824-common_voice_yue_31190840.wav" controls preload></audio> |
 | 同色至有得倾 | <audio class="audio-player2" src="TTS/Yue/qwen/common_voice_yue_31192011-common_voice_yue_31192012.wav" controls preload></audio> | <audio class="audio-player2" src="TTS/Yue/ours/common_voice_yue_31192011-common_voice_yue_31192012.wav" controls preload></audio> |
 | 你哋查唔查到呢个字 | <audio class="audio-player2" src="TTS/Yue/qwen/common_voice_yue_31192011-common_voice_yue_31192013.wav" controls preload></audio> | <audio class="audio-player2" src="TTS/Yue/ours/common_voice_yue_31192011-common_voice_yue_31192013.wav" controls preload></audio> |
-| 唔通佢系我男朋友 | <audio class="audio-player2" src="TTS/Yue/qwen/common_voice_yue_31193213-common_voice_yue_31193215.wav" controls preload></audio> | <audio class="audio-player2" src="TTS/Yue/ours/common_voice_yue_31193213-common_voice_yue_31193215.wav" controls preload></audio> |
 | 不如自己谂办法 | <audio class="audio-player2" src="TTS/Yue/qwen/common_voice_yue_31204888-common_voice_yue_31204889.wav" controls preload></audio> | <audio class="audio-player2" src="TTS/Yue/ours/common_voice_yue_31204888-common_voice_yue_31204889.wav" controls preload></audio> |
 
 ## Text-to-Sound Demo
